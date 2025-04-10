@@ -1,0 +1,14 @@
+==> 2025-04-10 14:34:36 <==
+# cmd: C:\Users\bhoom\Downloads\New folder\Scripts\conda-script.py create -p env python==3.9 -y
+# conda version: 24.5.0
++defaults/noarch::tzdata-2025a-h04d1e81_0
++defaults/win-64::ca-certificates-2025.2.25-haa95532_0
++defaults/win-64::openssl-1.1.1w-h2bbff1b_0
++defaults/win-64::pip-25.0-py39haa95532_0
++defaults/win-64::python-3.9.0-h6244533_2
++defaults/win-64::setuptools-75.8.0-py39haa95532_0
++defaults/win-64::sqlite-3.45.3-h2bbff1b_0
++defaults/win-64::vc-14.42-haa95532_4
++defaults/win-64::vs2015_runtime-14.42.34433-he0abc0d_4
++defaults/win-64::wheel-0.45.1-py39haa95532_0
+# update specs: ['python==3.9']
