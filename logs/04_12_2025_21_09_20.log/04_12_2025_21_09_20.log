@@ -1,0 +1,5 @@
+[2025-04-12 21:09:21,803] 148 numexpr.utils- INFO-Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2025-04-12 21:09:21,803] 160 numexpr.utils- INFO-NumExpr defaulting to 8 threads.
+[2025-04-12 21:09:24,199] 10 root- INFO-The execution has started
+[2025-04-12 21:09:24,199] 19 root- INFO-Reading SQL database started
+[2025-04-12 21:09:24,219] 17 root- INFO-Custom Exception
