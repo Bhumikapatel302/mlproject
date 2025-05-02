@@ -1,9 +1,15 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
+
 import os##To make current folders and path
 import sys##to handle custom exception
-from src.mlproject.exception import CustomException #to handle custom exception
-from src.mlproject.logger import logging#to log the information
+from mlproject.exception import CustomException #to handle custom exception
+from mlproject.logger import logging#to log the information
 import pandas as pd
-from src.mlproject.utils import read_sql_data
+from mlproject.utils import read_sql_data
 
 from sklearn.model_selection import train_test_split
 
@@ -13,7 +19,7 @@ from dataclasses import dataclass #to take input from user in a structured way
 class DataIngestionConfig:
     train_data_path:str=os.path.join('artifacts','train.csv')
     test_data_path:str=os.path.join('artifacts','test.csv')
-    raw_data_path:str=os.path.join('artifacts','raw.csv')#to create the path for train,test and raw data
+    raw_data_path:str=os.path.join('artifacts','raw.csv')#t0 cceate the path for train,test and raw data
 
 
 class DataIngestion:
@@ -25,7 +31,7 @@ class DataIngestion:
             df=read_sql_data()
             logging.info("Reading completed mysql database")#to log the information
 
-            os.makedirs(os.path.dirname(self.ingestion_comfig.train_data_path),exist_ok=True)#to create the directory if not exists
+            os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)#to create the directory if not exists
 
 
             df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)#to save the datta in csv format

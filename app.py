@@ -1,7 +1,14 @@
-from src.mlproject.logger import logging
-from src.mlproject.exception import CustomException
-from src.mlproject.components.data_ingestion import DataIngestion
-from src.mlproject.components.data_ingestion import DataIngestionConfig
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
+
+
+from mlproject.logger import logging
+from mlproject.exception import CustomException
+from mlproject.components.data_ingestion import DataIngestion
+from mlproject.components.data_ingestion import DataIngestionConfig
 import sys
 
 
